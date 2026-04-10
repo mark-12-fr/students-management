@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHINMA University of Iloilo - Admin</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+   
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+
+@keyframes fadeSlide {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.main-content {
+    animation: fadeSlide .5s ease;
+}
+
+.dash-card {
+    animation: fadeSlide .6s ease;
+    animation-fill-mode: both;
+    transition: all .25s ease;
+}
+
+.dash-card:nth-child(1) { animation-delay: .05s; }
+.dash-card:nth-child(2) { animation-delay: .10s; }
+.dash-card:nth-child(3) { animation-delay: .15s; }
+.dash-card:nth-child(4) { animation-delay: .20s; }
+
+
+.sidebar-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255,255,255,0.5);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+    display: block;
+    margin: 0 auto 6px;
+}
+
+.avatar-fallback {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #1e293b;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0 auto 6px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+}
+
+.sidebar-username {
+    font-size: 13px;
+    font-weight: 600;
+    opacity: .9;
+    margin-top: 4px;
+    text-align: center;
+}
+
+
+.sidebar-menu i {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.welcome-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+    </style>
+
+</head>
+
+<body>
+
+<div class="layout">
+
+    
+    <aside class="sidebar">
+        <div class="sidebar-top">
+
+            <h2>Teacher Panel</h2>
+
+            <div class="sidebar-username">
+                Glyssa Mae A. Sepanton
+            </div>
+        </div>
+
+       
+        <ul class="sidebar-menu">
+                <li><a href="#" class="active"><i data-lucide="layout-dashboard"></i> Dashboard</a></li>
+                <li><a href="#"><i data-lucide="layers"></i>Section</a></li>
+                <li><a href="#"><i data-lucide="user-cog"></i>Modules</a></li>
+                <li><a href="#"><i data-lucide="clipboard-check"></i>Quizzes</a></li>
+                <li><a href="#"><i data-lucide="calendar-check"></i> Attendance</a></li>
+                <li><a href="#"><i data-lucide="file-text"></i>Exams</a></li>
+                <li><a href="#"><i data-lucide="bar-chart-3"></i>Grades</a></li>
+                <li><a href="#"><i data-lucide="trending-up"></i>Performance</a></li>
+                <li><a href="#"><i data-lucide="brain"></i>AI Assistant</a></li>
+                <li><a href="about.html"><i data-lucide="info"></i> About</a></li>
+                <li><a href="help.html"><i data-lucide="help-circle"></i> Help</a></li>
+        </ul>
+    </aside>
+
+  
+    <main class="main-content">
+
+        <div class="topbar">
+            <h1>Dashboard</h1>
+            <p class="breadcrumb">Teacher Overview</p>
+        </div>
+
+        <div class="dashboard-wrapper">
+
+            <h2 class="welcome-title">
+                Welcome, Ma'am Glyssa!
+                <i data-lucide="hand-wave"></i>
+            </h2>
+
+
+        </div>
+
+    </main>
+
+</div>
+
+<footer class="footer">
+    © 2026 PHINMA University of Iloilo. Developed by CodexTech.
+</footer>
+
+<script>
+    lucide.createIcons();
+</script>
+
+</body>
+</html>
